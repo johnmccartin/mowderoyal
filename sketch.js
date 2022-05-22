@@ -63,6 +63,7 @@ function preload() {
 
 function setup() {
   createCanvas(1280, 720);
+  frameRate(5);
   createCanvas(windowWidth-20,windowHeight-20)
   spacing = random(.55,.85);
   selected_func = random(photo_funcs);
