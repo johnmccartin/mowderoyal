@@ -66,7 +66,7 @@ function setup() {
   frameRate(5);
   createCanvas(windowWidth-20,windowHeight-20)
   spacing = random(.55,.85);
-  selected_func = random(photo_funcs);
+  //selected_func = random(photo_funcs);
 
 
 	  for (let i = 0; i<pics_count; i++) {
