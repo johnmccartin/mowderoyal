@@ -29,7 +29,7 @@ let selected_func;
 let photo_funcs = [photoA,photoB,photoC,photoD,photoE,photoF,photoG,photoH];
 
 let loading_text = 'LOADING LOADING LOADING LOADING LOADING LOADING LOADING LOADING LOADING LOADING LOADING LOADING LOADING ';
-let mo_text = 'MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL ';
+let mo_text = 'MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL MOWDER OYAL ';
 let text_active = loading_text;
 let current_font = 'Arial'
 
@@ -301,7 +301,7 @@ function bracket_text() {
 	textFont(current_font);
 	textSize(30);
 	text(text_active,10,40);
-	text(text_active,10,height-20)
+	text(text_active,-60,height-20)
 	pop();
 }
 
@@ -582,3 +582,9 @@ function main_controller(){
 }
 
 
+
+
+
+function windowResized() {
+	resizeCanvas(windowWidth-20,windowHeight-20);
+}
